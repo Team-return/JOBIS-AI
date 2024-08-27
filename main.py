@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 import uvicorn
 
+
 app = FastAPI(title="Jobis AI")
 
 @app.get("/")
