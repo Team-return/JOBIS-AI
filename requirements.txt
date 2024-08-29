@@ -3,3 +3,4 @@ pandas
 uvicorn
 torch
 boto3
+scikit-learn
