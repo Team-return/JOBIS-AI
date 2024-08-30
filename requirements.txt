@@ -4,3 +4,4 @@ uvicorn
 torch
 boto3
 scikit-learn
+sentence-transformers #nlp model 불러오기
