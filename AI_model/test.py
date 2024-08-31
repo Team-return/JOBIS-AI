@@ -40,4 +40,5 @@ top_results = torch.topk(cosine_scores, k=top_n)
 
 # 추천 기업 출력 (indices를 리스트로 변환하여 정수 인덱스로 사용)
 recommended_companies = [df.iloc[i]['company_name'] for i in top_results.indices[0].tolist()]
+recommended_companies.sort()
 print(f"추천 기업 (기준: 분야={input_sector}, 기술 스택={input_tech_stack}): {recommended_companies}")
