@@ -17,7 +17,7 @@ data = {
 df = pd.DataFrame(data)
 df['combined_features'] = df['sector'] + ', ' + df['tech_stack']
 
-# Sentence-BERT 모델 로드 
+# Sentence-BERT 모델 불러오기 
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
 # 기업 데이터 임베딩(AI가 알아먹을 수 있는 디지털로 바꾸는 것)
